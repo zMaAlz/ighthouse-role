@@ -1,7 +1,7 @@
 nginx-role
 =========
 
-Роль для Ansible 2.10 и новрее для установки web-сервера Nginx на CentOS 7. 
+Роль для Ansible 2.10 и новее для установки web-сервера Nginx на CentOS 7. 
 
 Requirements
 ------------
@@ -21,12 +21,13 @@ Dependencies
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+Пример использования:
 
-  - name: Play name 
-    hosts: servers
-    roles:
-      - { role: username.rolename, x: 42 }
+---
+- name: Install nginx
+  hosts: lighthouse
+  roles:
+    - nginx-role
 
 License
 -------
